@@ -37,13 +37,13 @@ attributes added or removed. (By attribute, mean whatever information
 is associated to the node after its name.) For example, we may have to
 process, in place of the above input, the erroneous file
 
-   a
-   |- b
-   |- c
-   |- d
-   |  |- e
-   |  |  |- f
-   |  `- g
+         a
+         |- b
+         |- c
+         |- d
+         |  |- e
+         |  |  |- f
+         |  `- g
 
 We rely on [ocamllex] and a bijection between Catalan trees (that is,
 unranked trees) and Dyck paths to very efficiently build an OCaml
